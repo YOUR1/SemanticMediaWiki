@@ -10,7 +10,7 @@ use Hooks;
 Hooks::register( 'SMW::Settings::BeforeInitializationComplete', function( &$configuration ) {
 
 	// Extend the configuration of `smwgNamespacesWithSemanticLinks`
-	$configuration['smwgNamespacesWithSemanticLinks'][NS_MAIN] = true
+	$configuration['smwgNamespacesWithSemanticLinks'][NS_MAIN] = true;
 
 	return true;
 } );
