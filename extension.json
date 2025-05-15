@@ -1,11 +1,11 @@
 {
 	"name": "SemanticMediaWiki",
-	"version": "5.0.0-beta",
+	"version": "5.0.1",
 	"author": [
 		"[https://korrekt.org Markus Krötzsch]",
 		"[https://EntropyWins.wtf/mediawiki Jeroen De Dauw]",
 		"James Hong Kong",
-		"[https://professional.wiki/ Professional Wiki]",
+		"[https://Professional.Wiki Professional Wiki]",
 		"[https://www.semantic-mediawiki.org/wiki/Contributors ...]"
 	],
 	"url": "https://www.semantic-mediawiki.org",
@@ -31,7 +31,9 @@
 		"ApiMain::moduleManager": "SMW\\MediaWiki\\Hooks::onApiModuleManager"
 	},
 	"AutoloadClasses": {
-		"SemanticMediaWiki": "includes/SemanticMediaWiki.php"
+		"SemanticMediaWiki": "includes/SemanticMediaWiki.php",
+		"SMWElasticStore": "src/Elastic/ElasticStore.php",
+		"SMWSearch": "src/MediaWiki/Search/ExtendedSearchEngine.php"
 	},
 	"callback": "SemanticMediaWiki::initExtension",
 	"ExtensionFunctions": [
